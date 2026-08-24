@@ -4,85 +4,103 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Ozgeris — Новая эпоха требует нового сознания</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="progress" id="progress"></div>
 
-<nav class="nav">
+<nav class="nav" id="nav">
   <div class="nav-inner">
     <a class="logo" href="#"><span class="logo-mark">◈</span> AI OZGERIS</a>
     <div class="nav-links">
-      <a href="#s1">Новая эпоха</a>
-      <a href="#s2">Траектория</a>
-      <a href="#s3">Этика</a>
-      <a href="#s4">Talent Pool</a>
-      <a href="#s5">Соцлифт</a>
-      <a href="#s6">Gloo</a>
-      <a href="#s7">Ценности</a>
+      <a href="#s1" data-n="01">Новая эпоха</a>
+      <a href="#s2" data-n="02">Траектория</a>
+      <a href="#s3" data-n="03">Этика</a>
+      <a href="#s4" data-n="04">Talent Pool</a>
+      <a href="#s5" data-n="05">Соцлифт</a>
+      <a href="#s6" data-n="06">Gloo</a>
+      <a href="#s7" data-n="07">Ценности</a>
     </div>
-    <a class="nav-cta" href="#s4">Talent Pool</a>
-    <button class="burger" onclick="toggleMenu()">☰</button>
+    <a class="nav-cta" href="#s4">Присоединиться</a>
+    <button class="burger" onclick="toggleMenu()" aria-label="меню">☰</button>
   </div>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#s1">Новая эпоха</a><a href="#s2">Траектория</a><a href="#s3">Этика</a><a href="#s4">Talent Pool</a><a href="#s5">Соцлифт</a><a href="#s6">Gloo</a><a href="#s7">Ценности</a>
+    <a href="#s1">01 Новая эпоха</a><a href="#s2">02 Траектория</a><a href="#s3">03 Этика</a><a href="#s4">04 Talent Pool</a><a href="#s5">05 Соцлифт</a><a href="#s6">06 Gloo</a><a href="#s7">07 Ценности</a>
   </div>
 </nav>
 
-<!-- Инфографика 1-в-1 из PNGs -->
 <main>
-  <section id="s1" class="png-sec sec-1">
+
+  <section id="s1" class="png-sec sec-1" data-chapter="01 / Манифест">
     <div class="container">
-      <div class="png-card">
-        <img src="pngs/Group 2672.png" alt="Новая эпоха требует нового сознания — AI Ozgeris, мозг орнамент и плата" loading="eager">
+      <div class="chapter-label"><span>01</span> Манифест — Новая эпоха требует нового сознания</div>
+      <div class="png-card reveal">
+        <img src="pngs/Group 2672_apple.png" alt="Новая эпоха требует нового сознания — мозг орнамент и плата" loading="eager">
       </div>
+      <a class="next-chapter" href="#s2">Далее: Траектория Ascension Loop <span>→</span></a>
     </div>
   </section>
 
-  <section id="s2" class="png-sec sec-2">
+  <section id="s2" class="png-sec sec-2" data-chapter="02 / Траектория">
     <div class="container">
-      <div class="png-card">
-        <img src="pngs/Group 2673.png" alt="Непрерывное развитие от человека сомневающегося к человеку будущего — 3 этапа Ascension Loop" loading="lazy">
+      <div class="chapter-label dark"><span>02</span> Непрерывное развитие — от сомневающегося к человеку будущего</div>
+      <div class="png-card reveal">
+        <img src="pngs/Group 2673_apple.png" alt="Траектория 3 этапа Ascension Loop" loading="lazy">
       </div>
+      <a class="next-chapter" href="#s3">Далее: Этика как преимущество <span>→</span></a>
     </div>
   </section>
 
-  <section id="s3" class="png-sec sec-3">
+  <section id="s3" class="png-sec sec-3" data-chapter="03 / Этика">
     <div class="container">
-      <div class="png-card">
-        <img src="pngs/Group 2674.png" alt="В мире ИИ этика и совесть — главное преимущество. Soft skills / Hard skills шестерни" loading="lazy">
+      <div class="chapter-label"><span>03</span> Этика и совесть — главный конкурентный актив</div>
+      <div class="png-card reveal">
+        <img src="pngs/Group 2674_apple.png" alt="Soft vs Hard skills шестерни" loading="lazy">
       </div>
+      <a class="next-chapter" href="#s4">Далее: Пирамида талантов <span>→</span></a>
     </div>
   </section>
 
-  <section id="s4" class="png-sec sec-4">
+  <section id="s4" class="png-sec sec-4" data-chapter="04 / Talent Pool">
     <div class="container">
-      <div class="png-card">
-        <img src="pngs/Group 2675.png" alt="Government Talent Pool — пирамида талантов и телефон с матчингом" loading="lazy">
+      <div class="chapter-label"><span>04</span> Government Talent Pool — единый сайт талантов</div>
+      <div class="png-card reveal">
+        <img src="pngs/Group 2675_apple.png" alt="Пирамида талантов и телефон матчинга" loading="lazy">
       </div>
+      <a class="next-chapter" href="#s5">Далее: Социальный лифт <span>→</span></a>
     </div>
   </section>
 
-  <section id="s5" class="png-sec sec-5">
+  <section id="s5" class="png-sec sec-5" data-chapter="05 / Соцлифт">
     <div class="container">
-      <div class="png-card">
-        <img src="pngs/Group 2676.png" alt="Прозрачный социальный лифт на базе ИИ — уровни резервов и метрики Абая" loading="lazy">
+      <div class="chapter-label"><span>05</span> Прозрачный социальный лифт на базе ИИ</div>
+      <div class="png-card reveal">
+        <img src="pngs/Group 2676_apple.png" alt="Социальный лифт и метрики Абая" loading="lazy">
       </div>
+      <a class="next-chapter" href="#s6">Далее: Масштабирование смыслов <span>→</span></a>
     </div>
   </section>
 
-  <section id="s6" class="png-sec sec-6">
+  <section id="s6" class="png-sec sec-6" data-chapter="06 / Gloo">
     <div class="container">
-      <div class="png-card wide">
-        <img src="pngs/Group 2677.png" alt="Технологии масштабирования смыслов — карта мира, печатный станок, Gloo 300k церквей" loading="lazy">
+      <div class="chapter-label"><span>06</span> Технологии масштабирования — кейс Gloo</div>
+      <div class="png-card wide reveal">
+        <img src="pngs/Group 2677_apple.png" alt="Карта мира печатный станок Gloo" loading="lazy">
       </div>
+      <a class="next-chapter" href="#s7">Далее: Фундамент будущего <span>→</span></a>
     </div>
   </section>
 
-  <section id="s7" class="png-sec sec-7">
+  <section id="s7" class="png-sec sec-7" data-chapter="07 / Ценности">
     <div class="container">
-      <div class="png-card">
-        <img src="pngs/Group 2678.png" alt="Искусственный интеллект и национальные ценности — Venn Нұрлы ақыл, Ыстық қайрат, Жылы жүрек" loading="lazy">
+      <div class="chapter-label"><span>07</span> Национальные ценности — фундамент устойчивого будущего</div>
+      <div class="png-card reveal">
+        <img src="pngs/Group 2678_apple.png" alt="Venn Нұрлы ақыл Ыстық қайрат Жылы жүрек" loading="lazy">
+      </div>
+      <div class="cta-final">
+        <p>Мы строим общество, где ИИ масштабирует человечность. Этика — наш компас, ИИ — наш двигатель.</p>
+        <a href="#s1" class="btn-gold">Вернуться к началу ↑</a>
       </div>
     </div>
   </section>

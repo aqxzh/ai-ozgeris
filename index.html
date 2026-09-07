@@ -68,6 +68,10 @@
       <div class="png-card reveal">
         <img src="pngs/Group 2675_apple.png" alt="Пирамида талантов и телефон матчинга" loading="lazy">
       </div>
+      <button class="video-open" data-video="video/смарт hr.MOV">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Смотреть видео
+      </button>
       <a class="next-chapter" href="#s5">Далее: Социальный лифт <span>→</span></a>
     </div>
   </section>
@@ -114,6 +118,13 @@
   </div>
 </footer>
 
+<a class="vision-tab" href="vision.html">Видение</a>
+<div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Видео">
+  <button class="video-close" aria-label="Закрыть">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+  </button>
+  <video controls playsinline preload="metadata"></video>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
